@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220715144659">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220809180051">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,18 +14,18 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" data-scroll="124" data-scroll-show="1000">
 			<div class="header__container">
 				<div class="header__body">
 					<a href="" class="header__logo">RealEstate <span>Realty</span></a>
 					<div class="header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="" class="menu__link">Home</a></li>
-								<li class="menu__item"><a href="" class="menu__link">featured listings</a></li>
-								<li class="menu__item"><a href="" class="menu__link">search listings</a></li>
-								<li class="menu__item"><a href="" class="menu__link">about</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Contact</a></li>
+								<li class="menu__item"><a href="#" class="menu__link" data-goto=".person">Home</a></li>
+								<li class="menu__item"><a href="#" class="menu__link" data-goto=".featured">featured listings</a></li>
+								<li class="menu__item"><a href="#" class="menu__link" data-goto-top="300" data-goto=".search">search listings</a></li>
+								<li class="menu__item"><a href="#" class="menu__link" data-goto=".about">about</a></li>
+								<li class="menu__item"><a href="#" class="menu__link" data-goto=".footer">Contact</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -35,7 +35,7 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="person">
+			<section class="person" data-watch data-watch-once>
 				<div class="person__container">
 					<picture><source srcset="img/person/person.webp" type="image/webp"><img class="person__img" src="img/person/person.png" alt="person"></picture>
 					<div class="person__body">
@@ -46,7 +46,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="search">
+			<section class="search" data-watch data-watch-once>
 				<div class="search__container">
 					<div class="search__body">
 						<form class="search__form" action="#">
@@ -73,7 +73,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="about">
+			<section class="about" data-watch-threshold="0.1" data-watch data-watch-once>
 				<div class="about__container">
 					<div class="about__body">
 						<div class="about__img"><picture><source srcset="img/about/person.webp" type="image/webp"><img src="img/about/person.jpg" alt="person"></picture></div>
@@ -92,7 +92,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="featured">
+			<section class="featured" data-watch-threshold="0.1" data-watch data-watch-once>
 				<div class="featured__container">
 					<div class="featured__top">
 						<div class="featured__subtitle">LATEST PROPERTY</div>
@@ -101,7 +101,7 @@
 					</div>
 					<div class="featured__body">
 						<div class="featured__item item-featured">
-							<div class="item-featured__body">
+							<div class="item-featured__body" data-watch-threshold="0.5" data-watch data-watch-once>
 								<a href="" class="item-featured__image"><picture><source srcset="img/featured/1.webp" type="image/webp"><img src="img/featured/1.jpg" alt="house"></picture></a>
 								<div class="item-featured__info">
 									<a href="" class="item-featured__info-title">New Beautiful Villa</a>
@@ -115,7 +115,7 @@
 							</div>
 						</div>
 						<div class="featured__item item-featured">
-							<div class="item-featured__body">
+							<div class="item-featured__body" data-watch-threshold="0.5" data-watch data-watch-once>
 								<a href="" class="item-featured__image"><picture><source srcset="img/featured/2.webp" type="image/webp"><img src="img/featured/2.jpg" alt="house"></picture></a>
 								<div class="item-featured__info">
 									<a href="" class="item-featured__info-title">New Beautiful Villa</a>
@@ -129,7 +129,7 @@
 							</div>
 						</div>
 						<div class="featured__item item-featured">
-							<div class="item-featured__body">
+							<div class="item-featured__body" data-watch-threshold="0.5" data-watch data-watch-once>
 								<a href="" class="item-featured__image"><picture><source srcset="img/featured/3.webp" type="image/webp"><img src="img/featured/3.jpg" alt="house"></picture></a>
 								<div class="item-featured__info">
 									<a href="" class="item-featured__info-title">New Beautiful Villa</a>
@@ -143,7 +143,7 @@
 							</div>
 						</div>
 						<div class="featured__item item-featured">
-							<div class="item-featured__body">
+							<div class="item-featured__body" data-watch-threshold="0.5" data-watch data-watch-once>
 								<a href="" class="item-featured__image"><picture><source srcset="img/featured/4.webp" type="image/webp"><img src="img/featured/4.jpg" alt="house"></picture></a>
 								<div class="item-featured__info">
 									<a href="" class="item-featured__info-title">New Beautiful Villa</a>
@@ -157,7 +157,7 @@
 							</div>
 						</div>
 						<div class="featured__item item-featured">
-							<div class="item-featured__body">
+							<div class="item-featured__body" data-watch-threshold="0.5" data-watch data-watch-once>
 								<a href="" class="item-featured__image"><picture><source srcset="img/featured/5.webp" type="image/webp"><img src="img/featured/5.jpg" alt="house"></picture></a>
 								<div class="item-featured__info">
 									<a href="" class="item-featured__info-title">New Beautiful Villa</a>
@@ -171,7 +171,7 @@
 							</div>
 						</div>
 						<div class="featured__item item-featured">
-							<div class="item-featured__body">
+							<div class="item-featured__body" data-watch-threshold="0.5" data-watch data-watch-once>
 								<a href="" class="item-featured__image"><picture><source srcset="img/featured/6.webp" type="image/webp"><img src="img/featured/6.jpg" alt="house"></picture></a>
 								<div class="item-featured__info">
 									<a href="" class="item-featured__info-title">New Beautiful Villa</a>
@@ -184,7 +184,6 @@
 								</div>
 							</div>
 						</div>
-
 					</div>
 					<a href="" class="featured__btn _icon-arrow-right">VIEW ALL PROPERTIES</a>
 				</div>
@@ -192,12 +191,12 @@
 			<section class="reviews">
 				<div class="reviews__container">
 					<div class="reviews__row">
-						<div class="reviews__top">
+						<div class="reviews__top" data-watch-threshold="0.8" data-watch data-watch-once>
 							<h3 class="reviews__subtitle">Testimonials</h3>
 							<h2 class="reviews__title">What Our <span>Client Says</span></h2>
 							<a href="" class="reviews__btn _icon-arrow-right"><span>VIEW ALL PROPERTIES</spa></a>
 						</div>
-						<div class="reviews__body">
+						<div class="reviews__body" data-watch-threshold="0.5" data-watch data-watch-once>
 							<div class="reviews__slider swiper">
 								<div class="reviews__wrapper swiper-wrapper">
 									<div class="reviews__slide swiper-slide slide-reviews">
@@ -227,7 +226,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" data-watch-threshold="0.3" data-watch data-watch-once>
 			<div class="footer__container">
 				<div class="footer__row">
 					<div class="footer__column">
@@ -242,10 +241,10 @@
 					</div>
 					<nav class="footer__column">
 						<div class="footer__title">Quick Links</div>
-						<a href="" class="footer__link">About Us</a>
-						<a href="" class="footer__link">Featured Listings</a>
-						<a href="" class="footer__link">Search Listings</a>
-						<a href="" class="footer__link">Contact Us</a>
+						<a href="#" class="footer__link" data-goto=".about">About Us</a>
+						<a href="#" class="footer__link" data-goto=".featured">Featured Listings</a>
+						<a href="#" class="footer__link" data-goto-top="300" data-goto=".search">Search Listings</a>
+						<a href="#" class="footer__link" data-goto=".footer">Contact Us</a>
 					</nav>
 					<div class="footer__column">
 						<div class="footer__title">Resources</div>
@@ -271,7 +270,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20220715144659"></script>
+	<script src="js/app.min.js?_v=20220809180051"></script>
 </body>
 
 </html>
